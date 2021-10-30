@@ -1,3 +1,4 @@
+"""Lambda function which generates errors, as an example state machine step."""
 import random
 
 

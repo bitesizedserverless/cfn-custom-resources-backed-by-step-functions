@@ -1,3 +1,4 @@
+"""Lambda function that reports the state machine results back to CFN."""
 import json
 import requests
 

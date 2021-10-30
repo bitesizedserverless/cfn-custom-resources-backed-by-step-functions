@@ -1,3 +1,5 @@
+"""Lambda function used as a custom resource."""
+
 import json
 import os
 import boto3

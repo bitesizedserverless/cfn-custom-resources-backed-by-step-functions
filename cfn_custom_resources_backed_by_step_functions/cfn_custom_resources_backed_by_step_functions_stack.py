@@ -1,7 +1,6 @@
 """Module for the main CfnCustomResourcesBackedByStepFunctions Stack."""
 
 # Standard library imports
-import textwrap
 import time
 
 # Related third party imports
