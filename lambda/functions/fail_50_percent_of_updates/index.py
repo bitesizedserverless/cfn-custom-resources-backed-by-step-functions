@@ -4,10 +4,11 @@ import random
 
 def lambda_handler(event, _context):
     """
-    Receive an event from Step Functions, fetch the RequestType,
-    and generate a 50% chance to raise an exception when the CFN
-    RequestType is "Update". This will allow Creates and Deletes to
-    always succeed.
+    Receive an event from Step Functions and randomly generate errors.
+
+    First we fetch the RequestType, then we generate a 50% chance to
+    raise an exception when the CFN RequestType is "Update". This will
+    allow Creates and Deletes to always succeed.
     """
     cfn_request_type = event["RequestType"]
 

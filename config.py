@@ -14,7 +14,6 @@ class Config:  # pylint: disable=too-few-public-methods
 
     def __init__(self) -> None:
         """Initialize config class."""
-
         self._default_config = {}
 
     def base(self):
