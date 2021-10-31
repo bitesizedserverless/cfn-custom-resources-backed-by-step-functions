@@ -22,7 +22,6 @@ class CfnCustomResourcesBackedByStepFunctionsStack(cdk.Stack):
         self,
         scope: cdk.Construct,
         construct_id: str,
-        config: dict,  # pylint: disable=unused-argument
         **kwargs,
     ) -> None:
         """Construct a new CfnCustomResourcesBackedByStepFunctionsStack."""
