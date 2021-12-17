@@ -11,8 +11,6 @@ def lambda_handler(event, _context):
     cfn_request_id = event["ExecutionInput"]["RequestId"]
     logical_resource_id = event["ExecutionInput"]["LogicalResourceId"]
 
-    lambda_results = event["LambdaResults"]
-
     # Successful Lambda executions will look like this:
     # "LambdaResults": {
     #     "ExecutedVersion": "$LATEST",
@@ -25,6 +23,8 @@ def lambda_handler(event, _context):
     #     "Error": "RuntimeError",
     #     "Cause": "..."
     # }
+
+    lambda_results = event["LambdaResults"]
     success = "Error" not in lambda_results.keys()
 
     json_body = {

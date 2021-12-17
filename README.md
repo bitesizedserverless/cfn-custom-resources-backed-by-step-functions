@@ -10,5 +10,3 @@ To compile the CloudFormation templates, follow these steps:
 2. Then activate the `virtualenv` with `source .venv/bin/activate`.
 3. Next, install the required Python packages by running `pip install -r requirements.txt`
 4. Then compile CloudFormation by running `cdk synth`. The output will be stored in `cdk.out`.
-
-To deploy the templates, set your preferred region in `.env.aws` and your AWS Account ID in `.env.aws.dev`. Then run a `cdk deploy`.
